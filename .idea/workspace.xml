@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b268dde6-4b7d-4d63-a2ef-7df46c6b11dc" name="Default Changelist" comment="" />
+    <list default="true" id="b268dde6-4b7d-4d63-a2ef-7df46c6b11dc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,8 +37,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -48,7 +53,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1599918262635</updated>
-      <workItem from="1599918280062" duration="980000" />
+      <workItem from="1599918280062" duration="2074000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1599918351430</created>
@@ -64,7 +69,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599918894005</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Engines on package.json">
+      <created>1599919561966</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1599919561966</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -74,24 +86,25 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="Changing title name" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changing title name" />
+    <MESSAGE value="Engines on package.json" />
+    <option name="LAST_COMMIT_MESSAGE" value="Engines on package.json" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1599918892865">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1599919560962">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1599918892865" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1599919560962" />
     <state x="561" y="261" key="Github.ShareDialog" timestamp="1599918404345">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="561" y="261" key="Github.ShareDialog/0.0.1366.728@0.0.1366.728" timestamp="1599918404345" />
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1599918912639">
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1599919572525">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1599918912639" />
-    <state x="405" y="152" key="git4idea.merge.GitPullDialog" timestamp="1599918899669">
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1599919572525" />
+    <state x="405" y="152" key="git4idea.merge.GitPullDialog" timestamp="1599919565933">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="405" y="152" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1599918899669" />
+    <state x="405" y="152" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1599919565933" />
   </component>
 </project>
