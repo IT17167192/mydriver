@@ -2,7 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b268dde6-4b7d-4d63-a2ef-7df46c6b11dc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Components/Auth/SignIn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Auth/auth-service.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Common/breadcrumb-component.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Common/page-header-component.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Dashboard/Dashboard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Dashboard/Layout.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Menu/MenuItems.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Uploader/add-uploads-component.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Uploader/upload-service.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Constants.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/cover.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/cover.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/cover2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/cover2.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/google_drive_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/logo_drive.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,6 +36,13 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -36,6 +65,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Components/Auth" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -44,6 +74,16 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\NodeJs\MyDriver\mydriver" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\NodeJs\MyDriver\mydriver\src\Components\Auth" />
+      <recent name="D:\NodeJs\MyDriver\mydriver\src\Components" />
+      <recent name="D:\NodeJs\MyDriver\mydriver\src" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -55,7 +95,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1599918262635</updated>
-      <workItem from="1599918280062" duration="4740000" />
+      <workItem from="1599918280062" duration="8255000" />
+      <workItem from="1600037953981" duration="1266000" />
+      <workItem from="1600101907295" duration="40118000" />
+      <workItem from="1600192406048" duration="14694000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1599918351430</created>
@@ -127,7 +170,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599922625853</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Rename title">
+      <created>1599923364384</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1599923364385</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,28 +192,41 @@
     <MESSAGE value="delete favicon" />
     <MESSAGE value="add favicon" />
     <MESSAGE value="build version" />
-    <option name="LAST_COMMIT_MESSAGE" value="build version" />
+    <MESSAGE value="Rename title" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rename title" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1599922624566">
+    <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600105053759">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1599922624566" />
+    <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1600105053759" />
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1599923363393">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1599923363393" />
     <state x="561" y="261" key="Github.ShareDialog" timestamp="1599918404345">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="561" y="261" key="Github.ShareDialog/0.0.1366.728@0.0.1366.728" timestamp="1599918404345" />
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1599922801817">
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1599923368150">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1599922801817" />
-    <state x="390" y="97" width="585" height="534" key="find.popup" timestamp="1599921427360">
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1599923368150" />
+    <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1600202843927">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="390" y="97" width="585" height="534" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1599921427360" />
+    <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1600202843927" />
+    <state x="390" y="97" width="585" height="566" key="find.popup" timestamp="1600105716399">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="390" y="97" width="585" height="566" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1600105716399" />
     <state x="405" y="152" key="git4idea.merge.GitPullDialog" timestamp="1599921253488">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="405" y="152" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1599921253488" />
+    <state x="339" y="162" key="run.anything.popup" timestamp="1600126507598">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1600126507598" />
   </component>
 </project>
