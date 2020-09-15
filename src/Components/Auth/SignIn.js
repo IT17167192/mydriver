@@ -83,7 +83,7 @@ const SignIn = () => {
     };
 
     const responseGoogle = (response) => {
-        // console.log(response);
+        console.log(response);
         if(response.profileObj.email){
             const tokenObj = {
                 access_token: response.tokenObj.access_token,
