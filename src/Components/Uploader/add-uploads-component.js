@@ -1,15 +1,12 @@
-import React, {useEffect, useState} from "react";
+import React, {useState} from "react";
 import Grid from '@material-ui/core/Grid';
-import * as Constants from '../../Constants';
 import Paper from '@material-ui/core/Paper';
-import TextField from '@material-ui/core/TextField';
 import clsx from 'clsx';
 import {makeStyles} from "@material-ui/core/styles";
 import PageHeader from "../Common/page-header-component";
 import BreadcrumbComponent from "../Common/breadcrumb-component";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faPaperPlane, faRedoAlt, faCloudUploadAlt, faUpload} from "@fortawesome/free-solid-svg-icons";
-import CircularProgress from "@material-ui/core/CircularProgress";
+import {faCloudUploadAlt, faUpload} from "@fortawesome/free-solid-svg-icons";
 import {isAuthenticate} from "../Auth/auth-service";
 import 'react-dropzone-uploader/dist/styles.css'
 import Dropzone from 'react-dropzone-uploader'
