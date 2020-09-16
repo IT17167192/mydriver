@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b268dde6-4b7d-4d63-a2ef-7df46c6b11dc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Uploader/add-uploads-component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Uploader/add-uploads-component.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +77,7 @@
       <workItem from="1599918280062" duration="8255000" />
       <workItem from="1600037953981" duration="1266000" />
       <workItem from="1600101907295" duration="40118000" />
-      <workItem from="1600192406048" duration="17905000" />
+      <workItem from="1600192406048" duration="18524000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1599918351430</created>
@@ -177,7 +177,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600211548543</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="config.js change">
+      <created>1600235020727</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1600235020728</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,25 +203,26 @@
     <MESSAGE value="Finished Project" />
     <MESSAGE value="Finished Project with minor upgrades" />
     <MESSAGE value="sign in change" />
-    <option name="LAST_COMMIT_MESSAGE" value="sign in change" />
+    <MESSAGE value="config.js change" />
+    <option name="LAST_COMMIT_MESSAGE" value="config.js change" />
   </component>
   <component name="WindowStateProjectService">
     <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600105053759">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1600105053759" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1600211547567">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1600235019328">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1600211547567" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1600235019328" />
     <state x="561" y="261" key="Github.ShareDialog" timestamp="1599918404345">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="561" y="261" key="Github.ShareDialog/0.0.1366.728@0.0.1366.728" timestamp="1599918404345" />
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1600211574635">
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1600235036558">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1600211574635" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1600235036558" />
     <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1600202843927">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -223,10 +231,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="390" y="97" width="585" height="566" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1600105716399" />
-    <state x="405" y="152" key="git4idea.merge.GitPullDialog" timestamp="1600211554508">
+    <state x="405" y="152" key="git4idea.merge.GitPullDialog" timestamp="1600234903496">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="405" y="152" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1600211554508" />
+    <state x="405" y="152" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1600234903496" />
     <state x="339" y="162" key="run.anything.popup" timestamp="1600126507598">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
