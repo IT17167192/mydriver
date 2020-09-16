@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b268dde6-4b7d-4d63-a2ef-7df46c6b11dc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Uploader/add-uploads-component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Uploader/add-uploads-component.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -77,7 +78,7 @@
       <workItem from="1599918280062" duration="8255000" />
       <workItem from="1600037953981" duration="1266000" />
       <workItem from="1600101907295" duration="40118000" />
-      <workItem from="1600192406048" duration="18524000" />
+      <workItem from="1600192406048" duration="19810000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1599918351430</created>
@@ -184,7 +185,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600235020728</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="api changed">
+      <created>1600235628582</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1600235628582</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,25 +212,26 @@
     <MESSAGE value="Finished Project with minor upgrades" />
     <MESSAGE value="sign in change" />
     <MESSAGE value="config.js change" />
-    <option name="LAST_COMMIT_MESSAGE" value="config.js change" />
+    <MESSAGE value="api changed" />
+    <option name="LAST_COMMIT_MESSAGE" value="api changed" />
   </component>
   <component name="WindowStateProjectService">
     <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600105053759">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1600105053759" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1600235019328">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1600235627548">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1600235019328" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1600235627548" />
     <state x="561" y="261" key="Github.ShareDialog" timestamp="1599918404345">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="561" y="261" key="Github.ShareDialog/0.0.1366.728@0.0.1366.728" timestamp="1599918404345" />
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1600235036558">
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1600235638282">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1600235036558" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1600235638282" />
     <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1600202843927">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

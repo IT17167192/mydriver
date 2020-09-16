@@ -14,7 +14,6 @@ import {uploadFile} from "./upload-service";
 import { Progress } from 'semantic-ui-react'
 import 'semantic-ui-css/semantic.min.css';
 import swal from "sweetalert";
-import {MY_DRIVER_API} from "../../config";
 
 const useStyles = makeStyles((theme) => ({
     paper: {
@@ -35,7 +34,7 @@ const Upload = (props) => {
     const {token, tokenObj} = isAuthenticate();
     const [loader, setLoader] = useState(false);
     const [progress, setProgress] = useState(0);
-    console.log("API : " + MY_DRIVER_API);
+
     // receives array of files that are done uploading when submit button is clicked
     const handleSubmit = (files, allFiles) => {
         let err = 0;
