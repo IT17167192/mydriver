@@ -11,6 +11,7 @@ const Routes = () => {
           <Route path={Constant.ROUTES.sign_in} exact component={SignIn}/>
           <Route path={Constant.ROUTES.dashboard} exact component={Dashboard}/>
           <Route path={Constant.ROUTES.uploader} exact component={Dashboard}/>
+          <Route path={Constant.ROUTES.previewer} exact component={Dashboard}/>
         </Switch>
       </BrowserRouter>
   );

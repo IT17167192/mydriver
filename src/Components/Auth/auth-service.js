@@ -1,11 +1,23 @@
 import {MY_DRIVER_API} from "../../config";
 
-export const signout = (next) => {
-    if (typeof window !== 'undefined') {
-        sessionStorage.clear();
-        localStorage.removeItem('userToken');
-        next();
-    }
+export const signout = (data, next) => {
+    return fetch(`${MY_DRIVER_API}/unlinkSession`, {
+        method: 'POST',
+        headers: {
+            Accept: 'application/json',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+    })
+        .then(response => {
+            //(response.json());
+            if (typeof window !== 'undefined') {
+                sessionStorage.clear();
+                localStorage.removeItem('userToken');
+                next();
+            }
+        })
+        .catch(err => console.log(err))
 };
 
 export const authenticate = (data, next) => {

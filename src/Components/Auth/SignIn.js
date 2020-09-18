@@ -11,8 +11,7 @@ import Typography from '@material-ui/core/Typography';
 import {makeStyles} from '@material-ui/core/styles';
 import {Redirect} from "react-router-dom";
 import {authenticate, isAuthenticate, signIn} from "./auth-service";
-import cover from '../../assets/images/cover2.jpg';
-import googleDriveLogp from '../../assets/images/google_drive_logo.png'
+import cover from '../../assets/images/signinDisplay2.jpg';
 import * as Constants from '../../Constants';
 import logo from "../../assets/images/google_drive_logo.png";
 import GoogleLogin from "react-google-login";
@@ -20,8 +19,8 @@ import GoogleLogin from "react-google-login";
 function Copyright() {
     return (
         <Typography variant="body2" color="textSecondary" align="center">
-            {'Copyright © '}
-            <Link color="inherit" href="https://material-ui.com/">
+            {'Copyright © IT17167192 '}
+            <Link color="inherit" href="http://localhost:3000">
                 My Driver
             </Link>{' '}
             {new Date().getFullYear()}
@@ -83,7 +82,7 @@ const SignIn = () => {
     };
 
     const responseGoogle = (response) => {
-        console.log(response);
+        //(response);
         if(response.profileObj.email){
             const tokenObj = {
                 access_token: response.tokenObj.access_token,
@@ -97,10 +96,10 @@ const SignIn = () => {
             signIn({name: response.profileObj.name , provider: "Google" , email: response.profileObj.email , providerId: response.googleId , token: response.accessToken, profilePicture: response.profileObj.imageUrl, tokenObj: tokenObj})
                 .then(data => {
                     if (data.error) {
-                        console.log("Error");
+                        console.log("Error" + data.error);
                     } else {
                         // const data = {name: response.profileObj.name , provider: "Google" , email: response.profileObj.email , providerId: response.googleId , token: response.accessToken, profilePicture: response.profileObj.imageUrl, tokenObj: tokenObj};
-                        authenticate({name: response.profileObj.name , provider: "Google" , email: response.profileObj.email , providerId: response.googleId , token: response.accessToken, profilePicture: response.profileObj.imageUrl, tokenObj: tokenObj}, () => {
+                        authenticate({name: response.profileObj.name , provider: "Google" , email: response.profileObj.email , providerId: response.googleId , profilePicture: response.profileObj.imageUrl, tokenObj: {id_token: tokenObj.id_token}}, () => {
                                 setRedirect(true);
                             }
                         );
@@ -119,7 +118,7 @@ const SignIn = () => {
                         <LockOutlinedIcon/>
                     </Avatar>
                     <Typography component="h1" variant="h5">
-                        Sign in
+                        MY DRIVER
                     </Typography>
                     <br/>
                     <GoogleLogin clientId="630604470131-nbeb6lhj7n53o1vu6o1hr9lu0d7phn2a.apps.googleusercontent.com"
@@ -128,7 +127,11 @@ const SignIn = () => {
                                  prompt='consent'
                                  scope={Constants.SCOPE}
                                  onSuccess={responseGoogle}
-                                 onFailure={responseGoogle} />
+                                 onFailure={responseGoogle}
+                                 render={renderProps => (
+                                     <button onClick={renderProps.onClick} className="btn btn-danger" style={{color: Constants.LINK.inactive}}>Google OAuth Sign In</button>
+                                 )}
+                    />
                     <img src={logo} width="50%" height="10%"/>
                 </div>
                 <Box mt={3}>

@@ -21,13 +21,13 @@ import Layout from "./Layout";
 import logo from '../../assets/images/logo_drive.png'
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 import Badge from '@material-ui/core/Badge/index';
-import coverImage from '../../assets/images/cover2.jpg'
+import coverImage from '../../assets/images/mainDisplay2.jpg';
 import {isAuthenticate, signout} from "../Auth/auth-service";
 
 function Copyright() {
     return (
         <Typography variant="body2" color="textSecondary" align="center">
-            {'Copyright © '}
+            {'Copyright © IT17167192 '}
             <Link color="inherit" href="https://material-ui.com/">
                My Driver
             </Link>{' '}
@@ -140,6 +140,7 @@ const Dashboard = ({history}) => {
     const classes = useStyles();
     const {name, profilePicture} = isAuthenticate();
     const [open, setOpen] = React.useState(true);
+    const {tokenObj} = isAuthenticate();
 
     const handleDrawerOpen = () => {
         setOpen(true);
@@ -169,7 +170,7 @@ const Dashboard = ({history}) => {
                     </Typography>
                     <span>{name} | </span>
                     <IconButton color="inherit"
-                                onClick={() => signout(() => {
+                                onClick={() => signout({"id_token": tokenObj.id_token}, () => {
                                     history.push('/');
                                 })}>
                         <Badge badgeContent={0} color="secondary">

@@ -90,6 +90,16 @@ const MenuItems = ({history}) => {
                         </ListItem>
                     </Link>
                 </List>
+                <List component="div" disablePadding>
+                    <Link to={Constants.ROUTES.previewer} style={{textDecoration: 'none', color: isActive(history, Constants.ROUTES.previewer)}}>
+                        <ListItem button className={classes.nested} selected={isSelected(history, Constants.ROUTES.previewer)}>
+                            <ListItemIcon style={{color: isActive(history, Constants.ROUTES.previewer)}}>
+                                <AddBoxIcon/>
+                            </ListItemIcon>
+                            <ListItemText primary="Preview Files"/>
+                        </ListItem>
+                    </Link>
+                </List>
             </Collapse>
         </div>
     )

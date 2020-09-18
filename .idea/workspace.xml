@@ -2,9 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b268dde6-4b7d-4d63-a2ef-7df46c6b11dc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Components/Dashboard/dashboard-component.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Previewer/preview-files-component.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Previewer/preview-service.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Previewer/thumbnail-component.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/mainDisplay.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/mainDisplay2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/signinDisplay.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/signinDisplay2.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Auth/SignIn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Auth/SignIn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Auth/auth-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Auth/auth-service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Common/breadcrumb-component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Common/breadcrumb-component.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Dashboard/Dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Dashboard/Dashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Dashboard/Layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Dashboard/Layout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Menu/MenuItems.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Menu/MenuItems.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Uploader/add-uploads-component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Uploader/add-uploads-component.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Constants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/cover.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/cover.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/cover2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/cover2.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +43,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="CSS File" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -45,7 +69,8 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Components/Auth" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets/images" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -56,13 +81,15 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\NodeJs\MyDriver\mydriver" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\NodeJs\MyDriver\mydriver\src\assets\images" />
+      <recent name="D:\NodeJs\MyDriver\mydriver\src\Components\Dashboard" />
       <recent name="D:\NodeJs\MyDriver\mydriver\src\Components\Auth" />
       <recent name="D:\NodeJs\MyDriver\mydriver\src\Components" />
       <recent name="D:\NodeJs\MyDriver\mydriver\src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\NodeJs\MyDriver\mydriver" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -79,6 +106,8 @@
       <workItem from="1600037953981" duration="1266000" />
       <workItem from="1600101907295" duration="40118000" />
       <workItem from="1600192406048" duration="19810000" />
+      <workItem from="1600323830373" duration="40051000" />
+      <workItem from="1600447590148" duration="1414000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1599918351430</created>
@@ -232,21 +261,21 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1600235638282" />
-    <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1600202843927">
+    <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1600328383154">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1600202843927" />
-    <state x="390" y="97" width="585" height="566" key="find.popup" timestamp="1600105716399">
+    <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1600328383154" />
+    <state x="390" y="97" width="585" height="566" key="find.popup" timestamp="1600380051814">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="390" y="97" width="585" height="566" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1600105716399" />
+    <state x="390" y="97" width="585" height="566" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1600380051814" />
     <state x="405" y="152" key="git4idea.merge.GitPullDialog" timestamp="1600234903496">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="405" y="152" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1600234903496" />
-    <state x="339" y="162" key="run.anything.popup" timestamp="1600126507598">
+    <state x="339" y="162" key="run.anything.popup" timestamp="1600348376071">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1600126507598" />
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1600348376071" />
   </component>
 </project>

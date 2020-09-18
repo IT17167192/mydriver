@@ -1,18 +1,22 @@
 import React from "react";
 import * as Constants from '../../Constants';
 import Upload from "../Uploader/add-uploads-component";
+import DashboardComponent from "./dashboard-component";
+import PreviewFiles from "../Previewer/preview-files-component";
 
 const appendView = (history) => {
-    console.log(history.location.pathname);
-    console.log(Constants.ROUTES.uploader);
     if(history.location.pathname === Constants.ROUTES.uploader){
         return (
             <Upload pathname = {history.location.pathname} />
         );
+    }else if(history.location.pathname === Constants.ROUTES.previewer){
+        return (
+          <PreviewFiles pathname = {history.location.pathname}/>
+        );
     }else{
         return (
-          "Hello"
-        );
+            <DashboardComponent pathname = {history.location.pathname}/>
+        )
     }
 };
 

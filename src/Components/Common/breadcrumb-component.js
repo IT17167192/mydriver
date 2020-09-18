@@ -16,7 +16,7 @@ const BreadcrumbComponent = (props) => {
             }
         })
         return (
-            <Breadcrumb className="mb-3">
+            <Breadcrumb className="mb-3 mt-1">
                 {breadCrumbArray}
             </Breadcrumb>
         );

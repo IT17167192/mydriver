@@ -14,6 +14,7 @@ import {uploadFile} from "./upload-service";
 import { Progress } from 'semantic-ui-react'
 import 'semantic-ui-css/semantic.min.css';
 import swal from "sweetalert";
+import { useAlert } from 'react-alert';
 
 const useStyles = makeStyles((theme) => ({
     paper: {
@@ -28,8 +29,10 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const Upload = (props) => {
+    //style config
     const classes = useStyles();
     const fixedHeightPaper = clsx(classes.paper, classes.fixedHeight);
+    const alert = useAlert();
 
     const {token, tokenObj} = isAuthenticate();
     const [loader, setLoader] = useState(false);
@@ -37,7 +40,6 @@ const Upload = (props) => {
 
     // receives array of files that are done uploading when submit button is clicked
     const handleSubmit = (files, allFiles) => {
-        let err = 0;
         let uploadedCount = 0;
         const totalFiles = files.length;
         setLoader(true);
@@ -50,16 +52,19 @@ const Upload = (props) => {
                 data.append('id_token', tokenObj.id_token);
                 uploadFile(token, data)
                     .then(data => {
-                        if(!data.success){
-                            err++;
+                        if(data.err){
+                            console.log(data.err);
+                            alert.error(`Error: ${data.err}`);
+                            //promise reject
                             reject();
+                            //clear all files
+                            allFiles.forEach(f => f.remove());
+                            //set loader to false
+                            setLoader(false);
+                            //break loop
                             return true;
                         }else{
                             ++uploadedCount;
-                            console.log(uploadedCount);
-                            console.log(totalFiles);
-                            console.log((uploadedCount/totalFiles)*100);
-                            console.log(Math.floor((uploadedCount/totalFiles)*100));
                             setProgress(Math.floor((uploadedCount/totalFiles) * 100));
                             console.log(data);
                             resolve();
@@ -70,9 +75,10 @@ const Upload = (props) => {
         );
 
         Promise.all(keysPromise).then(() => {
-           swal("Successful!", "Files Uploaded Successfully!", "success");
+            swal("Successful!", "Files Uploaded Successfully!", "success");
+            //clear all files
             allFiles.forEach(f => f.remove())
-           setLoader(false);
+            setLoader(false);
         });
 
     };
