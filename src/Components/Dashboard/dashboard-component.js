@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React from "react";
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import clsx from 'clsx';
@@ -7,7 +7,6 @@ import PageHeader from "../Common/page-header-component";
 import BreadcrumbComponent from "../Common/breadcrumb-component";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faTachometerAlt} from "@fortawesome/free-solid-svg-icons";
-import {isAuthenticate} from "../Auth/auth-service";
 
 const useStyles = makeStyles((theme) => ({
     paper: {
@@ -25,8 +24,6 @@ const DashboardComponent = (props) => {
     //style config
     const classes = useStyles();
     const fixedHeightPaper = clsx(classes.paper, classes.fixedHeight);
-
-    const {token, tokenObj} = isAuthenticate();
 
     return (
         <Grid item xs={12} md={12} lg={12}>

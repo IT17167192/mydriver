@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from 'react';
 import Avatar from '@material-ui/core/Avatar';
-import Button from '@material-ui/core/Button';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Link from '@material-ui/core/Link';
 import Paper from '@material-ui/core/Paper';
@@ -10,7 +9,7 @@ import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Typography from '@material-ui/core/Typography';
 import {makeStyles} from '@material-ui/core/styles';
 import {Redirect} from "react-router-dom";
-import {authenticate, isAuthenticate, signIn} from "./auth-service";
+import {authenticate, getTokenAndUserInfo, isAuthenticate} from "./auth-service";
 import cover from '../../assets/images/signinDisplay2.jpg';
 import * as Constants from '../../Constants';
 import logo from "../../assets/images/google_drive_logo.png";
@@ -82,30 +81,18 @@ const SignIn = () => {
     };
 
     const responseGoogle = (response) => {
-        //(response);
-        if(response.profileObj.email){
-            const tokenObj = {
-                access_token: response.tokenObj.access_token,
-                refresh_token: "",
-                scope: response.tokenObj.scope,
-                token_type: "Bearer",
-                id_token: response.tokenObj.id_token,
-                expiry_date:response.tokenObj.expires_at
-            };
-
-            signIn({name: response.profileObj.name , provider: "Google" , email: response.profileObj.email , providerId: response.googleId , token: response.accessToken, profilePicture: response.profileObj.imageUrl, tokenObj: tokenObj})
-                .then(data => {
-                    if (data.error) {
-                        console.log("Error" + data.error);
-                    } else {
-                        // const data = {name: response.profileObj.name , provider: "Google" , email: response.profileObj.email , providerId: response.googleId , token: response.accessToken, profilePicture: response.profileObj.imageUrl, tokenObj: tokenObj};
-                        authenticate({name: response.profileObj.name , provider: "Google" , email: response.profileObj.email , providerId: response.googleId , profilePicture: response.profileObj.imageUrl, tokenObj: {id_token: tokenObj.id_token}}, () => {
-                                setRedirect(true);
-                            }
-                        );
-                    }
-                })
-        }
+        getTokenAndUserInfo({code: response.code})
+            .then(data => {
+                if(data.success){
+                    authenticate({name: data.userData.name , provider: "Google" , email: data.userData.email , userId: data.userData.id , profilePicture: data.userData.picture, token: data.idToken, tokenObj: {id_token: data.idToken}}, () => {
+                            setRedirect(true);
+                        }
+                    );
+                }else{
+                    console.log(data.err);
+                }
+            })
+            .catch(err => console.log(err));
     }
 
     return (
@@ -125,14 +112,13 @@ const SignIn = () => {
                                  buttonText="Google Login"
                                  approvalPrompt="force"
                                  prompt='consent'
+                                 accessType="offline"
+                                 responseType="code"
                                  scope={Constants.SCOPE}
                                  onSuccess={responseGoogle}
                                  onFailure={responseGoogle}
-                                 render={renderProps => (
-                                     <button onClick={renderProps.onClick} className="btn btn-danger" style={{color: Constants.LINK.inactive}}>Google OAuth Sign In</button>
-                                 )}
                     />
-                    <img src={logo} width="50%" height="10%"/>
+                    <img src={logo} alt="LOGO" width="50%" height="10%"/>
                 </div>
                 <Box mt={3}>
                     <Copyright/>

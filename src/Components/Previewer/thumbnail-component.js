@@ -2,7 +2,7 @@ import React, {useEffect, useState} from "react";
 import {isAuthenticate} from "../Auth/auth-service";
 import {getFileThumbnailUrl} from "./preview-service";
 import CircularProgress from "@material-ui/core/CircularProgress";
-import logoDrive from "../../assets/images/google_drive_logo.png"
+import defaultDocument from "../../assets/images/default_document.jpg"
 
 const ThumbnailComponent = (props) => {
     const [fileId, setFileId] = useState('');
@@ -37,7 +37,9 @@ const ThumbnailComponent = (props) => {
                             <CircularProgress size={20}/>
                         </div>
                     </div>
-                    : <a id={fileId} target="_blank" href={thumbnailSrc !== "" ? thumbnailSrc : ""}><img src={thumbnailSrc} alt="thumbnail" style={{"width": "60px", "height": "80px"}} className="img-thumbnail"/></a>
+                    : <a id={fileId} target="_blank" href={thumbnailSrc ? thumbnailSrc : defaultDocument}>
+                        <img src={thumbnailSrc ? thumbnailSrc: defaultDocument} alt="document_image" style={{"width": "60px", "height": "80px"}} className="img-thumbnail"/>
+                      </a>
             }
         </div>
     );

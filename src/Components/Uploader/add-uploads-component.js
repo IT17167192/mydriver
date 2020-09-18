@@ -46,7 +46,6 @@ const Upload = (props) => {
 
         let keysPromise = files.map(f =>
             new Promise((resolve, reject) =>{
-                console.log(f);
                 const data = new FormData();
                 data.append('file', f.file);
                 data.append('id_token', tokenObj.id_token);
@@ -66,7 +65,6 @@ const Upload = (props) => {
                         }else{
                             ++uploadedCount;
                             setProgress(Math.floor((uploadedCount/totalFiles) * 100));
-                            console.log(data);
                             resolve();
                         }
                     })

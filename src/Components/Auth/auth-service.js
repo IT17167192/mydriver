@@ -40,8 +40,8 @@ export const isAuthenticate = () => {
     }
 };
 
-export const signIn = (data) => {
-    return fetch(`${MY_DRIVER_API}/configSession`, {
+export const getTokenAndUserInfo = (data) => {
+    return fetch(`${MY_DRIVER_API}/getTokenAndUserInfo`, {
         method: 'POST',
         headers: {
             Accept: 'application/json',

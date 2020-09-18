@@ -11,7 +11,6 @@ import {isAuthenticate} from "../Auth/auth-service";
 import {deleteFile, downloadFile, readFiles, readNextSetOfFiles} from "./preview-service";
 import { useAlert } from 'react-alert'
 import IconButton from '@material-ui/core/IconButton';
-import DeleteIcon from '@material-ui/icons/Delete';
 import swal from "sweetalert";
 import * as Constants from '../../Constants';
 import ThumbnailComponent from "./thumbnail-component";
@@ -195,8 +194,8 @@ const PreviewFiles = (props) => {
                 <tbody className="table-striped">
                     { typeof documents != "undefined" && documents.length > 0 ? documents.map((file) => (
                         <tr key={file.id}>
-                            <td scope="row" className="text-left"><ThumbnailComponent fileId={file.id} /></td>
-                            <td scope="row" className="text-left">{file.name}</td>
+                            <td className="text-left"><ThumbnailComponent fileId={file.id} /></td>
+                            <td className="text-left">{file.name}</td>
                             <td className="center">
                                 <IconButton onClick={() => {
                                     handleOnClickDownload({id: file.id, name: file.name})
@@ -211,7 +210,7 @@ const PreviewFiles = (props) => {
                                 </IconButton>
                             </td>
                         </tr>
-                    )) : <td colspan="3" className="text-center">No data Found!</td> }
+                    )) : <tr><td colSpan="3" className="text-center">No data Found!</td></tr> }
                 </tbody>
             </table>
         </div>

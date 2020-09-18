@@ -22,6 +22,7 @@ import logo from '../../assets/images/logo_drive.png'
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 import Badge from '@material-ui/core/Badge/index';
 import coverImage from '../../assets/images/mainDisplay2.jpg';
+import defaultProfilePicture from '../../assets/images/defualt_profile_pic.png';
 import {isAuthenticate, signout} from "../Auth/auth-service";
 
 function Copyright() {
@@ -164,8 +165,8 @@ const Dashboard = ({history}) => {
                     >
                         <MenuIcon style={{color: Constants.THEME.secondary}} />
                     </IconButton>
-                    <img src={logo} width="3.5%" height="3.5%"/>
-                    <Typography component="h1"  variant="h6" color="white" noWrap className={classes.title} >
+                    <img src={logo} alt="LOGO" width="3.5%" height="3.5%"/>
+                    <Typography component="h1"  variant="h6" color="inherit" noWrap className={classes.title} >
                         <span>  My Driver </span>
                     </Typography>
                     <span>{name} | </span>
@@ -190,7 +191,7 @@ const Dashboard = ({history}) => {
             >
                 <div className={classes.toolbarIcon} style={{zIndex: "-5"}}>
                     <div className="container-fluid text-dark text-center">
-                        <img src={profilePicture} className="imgProfile rounded-circle img-fluid cropImage border-light" width='60%' alt="Profile Picture"
+                        <img src={profilePicture ? profilePicture : defaultProfilePicture} alt={"Profile DP"}  className="imgProfile rounded-circle img-fluid cropImage border-light" width='60%'
                              style={{marginTop: 40, marginBottom: 40}}/>
                         {/*}<div className="centered text-secondary"><b>Admin</b></div> {*/}
                     </div>
