@@ -12,8 +12,7 @@ export const signout = (data, next) => {
         .then(response => {
             //(response.json());
             if (typeof window !== 'undefined') {
-                sessionStorage.clear();
-                localStorage.removeItem('userToken');
+                sessionStorage.removeItem('userData');
                 next();
             }
         })

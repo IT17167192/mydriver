@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b268dde6-4b7d-4d63-a2ef-7df46c6b11dc" name="Default Changelist" comment="" />
+    <list default="true" id="b268dde6-4b7d-4d63-a2ef-7df46c6b11dc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Auth/auth-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Auth/auth-service.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -84,7 +87,7 @@
       <workItem from="1600470725362" duration="403000" />
       <workItem from="1600473569644" duration="1856000" />
       <workItem from="1600480754159" duration="765000" />
-      <workItem from="1600529246803" duration="4589000" />
+      <workItem from="1600529246803" duration="4950000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1599918351430</created>
@@ -233,7 +236,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600533576962</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Added expiration time to session object and created private route">
+      <created>1600534270340</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1600534270340</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -265,18 +275,18 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1600105053759" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1600533575595">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1600534269282">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1600533575595" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1600534269282" />
     <state x="561" y="261" key="Github.ShareDialog" timestamp="1599918404345">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="561" y="261" key="Github.ShareDialog/0.0.1366.728@0.0.1366.728" timestamp="1599918404345" />
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1600533595792">
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1600534286709">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1600533595792" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1600534286709" />
     <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1600328383154">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -285,10 +295,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="390" y="97" width="585" height="566" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1600533104763" />
-    <state x="405" y="152" key="git4idea.merge.GitPullDialog" timestamp="1600533582770">
+    <state x="405" y="152" key="git4idea.merge.GitPullDialog" timestamp="1600534277442">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="405" y="152" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1600533582770" />
+    <state x="405" y="152" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1600534277442" />
     <state x="339" y="162" key="run.anything.popup" timestamp="1600348376071">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
