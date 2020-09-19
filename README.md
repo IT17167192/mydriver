@@ -22,10 +22,9 @@ Note : You have to do a small change in the server project.
   7. Open the browser and type url *"localhost:3000"
   8. Visit https://github.com/IT17167192/mydriverapi to view server project configuration instruction
 
-=============================================================================================================
+
 2) Or visit https://mygoogledriver.herokuapp.com
   1. In the server api project change redirect_uris[0] to redirect_uris[1]
      *You can find the code in controllers->OAuth.js->Line No 20.
      *Change it to -> (OAuth2Data.web.redirect_uris[1]).
-==============================================================================================================
 
