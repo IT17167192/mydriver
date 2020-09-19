@@ -84,7 +84,7 @@ const SignIn = () => {
         getTokenAndUserInfo({code: response.code})
             .then(data => {
                 if(data.success){
-                    authenticate({name: data.userData.name , provider: "Google" , email: data.userData.email , userId: data.userData.id , profilePicture: data.userData.picture, token: data.idToken, tokenObj: {id_token: data.idToken}}, () => {
+                    authenticate({name: data.userData.name , provider: "Google" , email: data.userData.email, exp: data.userData.exp , profilePicture: data.userData.picture, token: data.idToken, tokenObj: {id_token: data.idToken}}, () => {
                             setRedirect(true);
                         }
                     );

@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b268dde6-4b7d-4d63-a2ef-7df46c6b11dc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Auth/PrivateRoute.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Auth/SignIn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Auth/SignIn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Auth/auth-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Auth/auth-service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +48,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Components/Auth" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -56,15 +60,15 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\NodeJs\MyDriver\mydriver" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\NodeJs\MyDriver\mydriver\src\Components\Auth" />
       <recent name="D:\NodeJs\MyDriver\mydriver\src\assets\images" />
       <recent name="D:\NodeJs\MyDriver\mydriver\src\Components\Dashboard" />
-      <recent name="D:\NodeJs\MyDriver\mydriver\src\Components\Auth" />
       <recent name="D:\NodeJs\MyDriver\mydriver\src\Components" />
       <recent name="D:\NodeJs\MyDriver\mydriver\src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\NodeJs\MyDriver\mydriver" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -86,6 +90,7 @@
       <workItem from="1600470725362" duration="403000" />
       <workItem from="1600473569644" duration="1856000" />
       <workItem from="1600480754159" duration="765000" />
+      <workItem from="1600529246803" duration="3808000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1599918351430</created>
@@ -220,7 +225,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600480776060</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Updated README.md">
+      <created>1600529357921</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1600529357921</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -243,37 +255,38 @@
     <MESSAGE value="api changed" />
     <MESSAGE value="Finished Complete Project" />
     <MESSAGE value="OAuth grant type changed to code" />
-    <option name="LAST_COMMIT_MESSAGE" value="OAuth grant type changed to code" />
+    <MESSAGE value="Updated README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated README.md" />
   </component>
   <component name="WindowStateProjectService">
     <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600105053759">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1600105053759" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1600480774257">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1600529354473">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1600480774257" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1600529354473" />
     <state x="561" y="261" key="Github.ShareDialog" timestamp="1599918404345">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="561" y="261" key="Github.ShareDialog/0.0.1366.728@0.0.1366.728" timestamp="1599918404345" />
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1600480880765">
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1600529378647">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1600480880765" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1600529378647" />
     <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1600328383154">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1600328383154" />
-    <state x="390" y="97" width="585" height="566" key="find.popup" timestamp="1600380051814">
+    <state x="390" y="97" width="585" height="566" key="find.popup" timestamp="1600533104763">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="390" y="97" width="585" height="566" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1600380051814" />
-    <state x="405" y="152" key="git4idea.merge.GitPullDialog" timestamp="1600480781565">
+    <state x="390" y="97" width="585" height="566" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1600533104763" />
+    <state x="405" y="152" key="git4idea.merge.GitPullDialog" timestamp="1600529363807">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="405" y="152" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1600480781565" />
+    <state x="405" y="152" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1600529363807" />
     <state x="339" y="162" key="run.anything.popup" timestamp="1600348376071">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
