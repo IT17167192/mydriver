@@ -24,7 +24,7 @@ export const authenticate = (data, next) => {
         const now = new Date();
         const item = {
             value: data,
-            expiry: now.getTime() + data.exp
+            expiry: now.getTime() + 3600000
         };
         sessionStorage.setItem('userData', JSON.stringify(item));
         next();
@@ -48,7 +48,6 @@ export const isAuthenticate = () => {
         // If the item is expired, delete the item from storage
         // and return null
         signout({"id_token": item.value.tokenObj.id_token}, () => {
-            sessionStorage.removeItem('userData');
             return false;
         });
     }else if (sessionStorage.getItem('userData')) {
